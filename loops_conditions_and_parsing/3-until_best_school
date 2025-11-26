@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Write a Bash script that displays Best School 10 times.
 a=1
-until [ $a -gt 5 ]
-do
+until [ $a -gt 10 ]
+do	
 echo "Best School"
 ((a++))
 done
