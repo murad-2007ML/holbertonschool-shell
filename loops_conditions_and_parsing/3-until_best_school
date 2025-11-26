@@ -4,5 +4,5 @@ a=1
 until [ $a -gt 5 ]
 do
 echo "Best School"
-((count++))
+((a++))
 done
