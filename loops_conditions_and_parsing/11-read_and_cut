@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #read_cut
-while IFS=":" read -r username passwd uid gid comment home shell
+while read -r line
 do
-echo "${username}:${uid}:${gid}"
-done
+    echo "$line" | cut -d: -f1,3,6
+done < /etc/passwd
