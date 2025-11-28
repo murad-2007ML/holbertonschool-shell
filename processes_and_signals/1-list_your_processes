@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
-#Write a Bash script that displays a list of currently running processes
-ps -ef --forest
+#asda
+#!/usr/bin/env bash
+
+# Display a message
+echo "Listing processes sorted by CPU usage:"
+
+# Run ps and sort by CPU usage, then format with awk
+ps aux --sort=-%cpu | awk 'BEGIN {print "USER       PID   %CPU   %MEM   COMMAND"} {print $1, $2, $3, $4, $11}'
